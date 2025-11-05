@@ -1,0 +1,13 @@
+import sqlite3
+
+banco = sqlite3.connect('dc.db')
+
+
+cursor = banco.cursor()
+
+
+
+cursor.execute("CREATE TABLE registro (nome text,email text ,senha valor , cpf real)")
+
+
+banco.commit()
